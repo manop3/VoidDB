@@ -1,4 +1,4 @@
-desenvolvido em python, VoidDB é um menu interativo de terminal estilo banco de dados, feito para guardar e gerenciar arquivos de texto, e também testar e aprimorar minhas próprias habilidades, caso tenha gostado do projeto e queira utilizá-lo, fique à vontade para utilizar, melhor, modificar e dar sugestões.
+desenvolvido em python, VoidDB é um menu interativo de terminal estilo banco de dados, feito para guardar e gerenciar arquivos de texto, e também testar e aprimorar minhas próprias habilidades, caso tenha gostado do projeto e queira utilizá-lo, fique à vontade para utilizar, melhorar, modificar e dar sugestões.
 
 eu NÃO me responsabilizo pelo que você vá guardar ou gerenciar com esse banco de dados.
 
