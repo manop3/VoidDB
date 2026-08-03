@@ -1,5 +1,5 @@
 def menu_logins():
-    while True:
+   while True:
      print(r"""
 
   _  
@@ -22,7 +22,7 @@ def menu_logins():
           """)
      selectlogin = input('>> ')
      if selectlogin == '01':
-        print("""
+         print("""
 ___________.___ ____  __.___________________   ____  __.
 \__    ___/|   |    |/ _|\__    ___/\_____  \ |    |/ _|
   |    |   |   |      <    |    |    /   |   \|      <  
@@ -31,12 +31,13 @@ ___________.___ ____  __.___________________   ____  __.
                        \/                   \/        \/
 
          """)
-        with open('database/logins/tiktok-logins.txt', "r") as arquivo:
-           print(arquivo.read())
-           input('pressione ENTER para voltar...')
+
+         with open('database/logins/tiktok-logins.txt', "r") as arquivo:
+            print(arquivo.read())
+            input('pressione ENTER para voltar...')
 
      elif selectlogin == '02':
-      print(r"""
+         print(r"""
                              .__          
    ____   ____   ____   ____ |  |   ____  
   / ___\ /  _ \ /  _ \ / ___\|  | _/ __ \ 
@@ -44,21 +45,13 @@ ___________.___ ____  __.___________________   ____  __.
  \___  / \____/ \____/\___  /|____/\___  >
 /_____/              /_____/           \/ 
         """)
-      with open('database/logins/google-logins.txt', "r") as arquivo:
-           print(arquivo.read())
-           input('pressione ENTER para voltar...')
+         with open('database/logins/google-logins.txt', "r") as arquivo:
+            print(arquivo.read())
+            input('pressione ENTER para voltar...')
 
      elif selectlogin == '00':
-       print('voltando...')
-       break
-
-
-#def menu_cc():
-#   while True:
-#      print(r"""
-#   
-#      """)
-
+      print('voltando...')
+      break
 
 
 
