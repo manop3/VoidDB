@@ -1,3 +1,13 @@
+import os
+
+
+cookies = r'database/cookies'
+
+tokens = r'database/tokens'
+
+passw = r'database/passw'
+
+
 def menu_logins():
    while True:
      print(r"""
@@ -18,18 +28,25 @@ def menu_logins():
 
 [02]google
 
+[03]protonmail
+
+[04]kabum
+
+[05]serasa
+
 [00]exit
           """)
      selectlogin = input('>> ')
      if selectlogin == '01':
          print(r"""
-___________.___ ____  __.___________________   ____  __.
-\__    ___/|   |    |/ _|\__    ___/\_____  \ |    |/ _|
-  |    |   |   |      <    |    |    /   |   \|      <  
-  |    |   |   |    |  \   |    |   /    |    \    |  \ 
-  |____|   |___|____|__ \  |____|   \_______  /____|__ \
-                       \/                   \/        \/
-
+  _______ _ _    _        _    
+ |__   __(_) |  | |      | |   
+    | |   _| | _| |_ ___ | | __
+    | |  | | |/ / __/ _ \| |/ /
+    | |  | |   <| || (_) |   < 
+    |_|  |_|_|\_\\__\___/|_|\_\
+                               
+                               
          """)
 
          with open('database/logins/tiktok-logins.txt', "r") as arquivo:
@@ -38,20 +55,68 @@ ___________.___ ____  __.___________________   ____  __.
 
      elif selectlogin == '02':
          print(r"""
-                             .__          
-   ____   ____   ____   ____ |  |   ____  
-  / ___\ /  _ \ /  _ \ / ___\|  | _/ __ \ 
- / /_/  >  <_> |  <_> ) /_/  >  |_\  ___/ 
- \___  / \____/ \____/\___  /|____/\___  >
-/_____/              /_____/           \/ 
+   _____                   _      
+  / ____|                 | |     
+ | |  __  ___   ___   __ _| | ___ 
+ | | |_ |/ _ \ / _ \ / _` | |/ _ \
+ | |__| | (_) | (_) | (_| | |  __/
+  \_____|\___/ \___/ \__, |_|\___|
+                      __/ |       
+                     |___/        
         """)
          with open('database/logins/google-logins.txt', "r") as arquivo:
             print(arquivo.read())
             input('pressione ENTER para voltar...')
 
+     elif selectlogin == '03':
+        print(r"""
+  _____           _              __  __       _ _ 
+ |  __ \         | |            |  \/  |     (_) |
+ | |__) | __ ___ | |_ ___  _ __ | \  / | __ _ _| |
+ |  ___/ '__/ _ \| __/ _ \| '_ \| |\/| |/ _` | | |
+ | |   | | | (_) | || (_) | | | | |  | | (_| | | |
+ |_|   |_|  \___/ \__\___/|_| |_|_|  |_|\__,_|_|_|
+                                                  
+      
+    """)
+        with open('database/logins/protonmail-logins.txt', "r") as arquivo:
+           print(arquivo.read())
+           input('pressione ENTER para voltar...')   
+
+     elif selectlogin == '04':
+        print(r"""
+  _  __     _                     
+ | |/ /    | |                    
+ | ' / __ _| |__  _   _ _ __ ___  
+ |  < / _` | '_ \| | | | '_ ` _ \ 
+ | . \ (_| | |_) | |_| | | | | | |
+ |_|\_\__,_|_.__/ \__,_|_| |_| |_|
+                                  
+                                  
+    """)
+        with open('database/logins/kabum-logins.txt', "r") as arquivo:
+           print(arquivo.read())
+           input('pressione ENTER para voltar...')    
+
+     elif selectlogin == '05':
+        print(r"""
+   _____                          
+  / ____|                         
+ | (___   ___ _ __ __ _ ___  __ _ 
+  \___ \ / _ \ '__/ _` / __|/ _` |
+  ____) |  __/ | | (_| \__ \ (_| |
+ |_____/ \___|_|  \__,_|___/\__,_|
+                                  
+                                  
+    """)
+        with open('database/logins/serasa-logins.txt', "r") as arquivo:
+           print(arquivo.read())
+           input('pressione ENTER para voltar...')
+               
+
      elif selectlogin == '00':
-      print('voltando...')
-      break
+        print('voltando...')
+        break
 
 
 
@@ -89,6 +154,12 @@ by manop3
 
 [02]cc
 
+[03]cookies
+
+[04]tokens
+
+[05]passw
+
 [00]exit
            """)
 
@@ -109,12 +180,58 @@ by manop3
                
         """)
         with open('database/cc/cc.txt', "r") as arquivo:
-           print(arquivo.read())
-           input('pressione ENTER para voltar...')
+         print(arquivo.read())
+        input('pressione ENTER para voltar...')
+
+    elif select == '03':
+        print(r"""
+   _____            _    _           
+  / ____|          | |  (_)          
+ | |     ___   ___ | | ___  ___  ___ 
+ | |    / _ \ / _ \| |/ / |/ _ \/ __|
+ | |___| (_) | (_) |   <| |  __/\__ \
+  \_____\___/ \___/|_|\_\_|\___||___/
+                                     
+                                                         
+        """)
+        for item in os.listdir(cookies):
+         print(item)
+        input('pressione ENTER para sair...')
+
+    elif select == '04':
+        print(r"""
+  _______    _                  
+ |__   __|  | |                 
+    | | ___ | | _____ _ __  ___ 
+    | |/ _ \| |/ / _ \ '_ \/ __|
+    | | (_) |   <  __/ | | \__ \
+    |_|\___/|_|\_\___|_| |_|___/
+                                
+                                      
+        """)
+        for item in os.listdir(tokens):
+          print(item)
+        input('pressione ENTER para sair...')
+
+    elif select == '05':
+        print(r"""
+  _____                                    _ 
+ |  __ \                                  | |
+ | |__) |_ _ ___ _____      _____  _ __ __| |
+ |  ___/ _` / __/ __\ \ /\ / / _ \| '__/ _` |
+ | |  | (_| \__ \__ \\ V  V / (_) | | | (_| |
+ |_|   \__,_|___/___/ \_/\_/ \___/|_|  \__,_|
+                                             
+                                             
+        """)
+        for item in os.listdir(passw):
+             print(item)
+
+        input('pressione ENTER para voltar... ')
 
     elif select == '00':
-        print('saindo...')
-        break
+             print('saindo...')
+             break
 
 
  
