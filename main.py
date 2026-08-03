@@ -14,11 +14,11 @@ def menu_logins():
               
 
               
-01)tiktok
+[01]tiktok
 
-02)google
+[02]google
 
-00)exit
+[00]exit
           """)
      selectlogin = input('>> ')
      if selectlogin == '01':
@@ -79,17 +79,17 @@ while True:
     \_/    \______/ |__/ \_______/|_______/ |_______/ 
                                                       
                                                       
-    
+by manop3    
 
 
 
                                                       
     
-01)logins
+[01]logins
 
-02)cc
+[02]cc
 
-00)exit
+[00]exit
            """)
 
     select = input('>> ')
